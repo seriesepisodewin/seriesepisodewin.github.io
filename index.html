@@ -1,1 +1,139 @@
-Hello World
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Series. Episode. Win</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--[if lte IE 8]>
+    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link href="/assets/css/prism.css" rel="stylesheet"/>
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+</head>
+<body class="no-sidebar">
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <div id="header-wrapper">
+        <div id="header">
+            <!-- Logo -->
+            <h1>Series. Episode. Win
+            </h1>
+            <div class="example">
+                <pre><code
+                        class="language-bash">curl -d "name=Lost.S03E09.720.HDTV.x264-CTU" what.seriesepisode.win</code></pre>
+            </div>
+            <h3>Parse those pesky TV show names into something a little more managable.</h3>
+            <div class="example">
+                <pre><code class="language-json">{
+  "episode": 9,
+  "title": "Lost",
+  "season": 3,
+  "codec": "x264",
+  "excess": "720",
+  "group": "CTU",
+  "donate": "DONATE NOW AT https://paypal.me/GeeH",
+  "quality": "HDTV"
+}</code></pre>
+            </div>
+            <div class="centered example">
+                <h3>THIS SERVICE ROCKS.</h3>
+                <p>I get it. You're obviously the kind of person who likes to get something for nothing, that's why
+                    you're using this serivce, right. But I have to pay the tiny monthly costs to run this stuff, so
+                    for once, just do the right thing (also, I like beer).</p>
+                <a class="button" href="https://paypal.me/GeeH">🍻 Donate!</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Main -->
+    <div id="main-wrapper">
+        <div class="container">
+
+            <!-- Content -->
+            <article class="box post">
+
+                <header>
+
+                    <h2>FAQ</h2>
+                </header>
+                <h3>WTF?!?!</h3>
+                <p>
+                    It's pretty simple, dumbo. You POST a file name to <code>http://what.seriesepisode.win</code> and
+                    the service returns a json string with the parsed TV show name, series and episode (if it can do
+                    so). Just post the name using the <code>name</code> field name in the data. I even provided a CURL
+                    example at the top of the page so you wouldn't have to read below the fold. What kind of a
+                    programmer are you?
+                </p>
+                <h3>Why?</h3>
+                <p>
+                    What's the first rule of Fight Club?
+                </p>
+                <h3>How?</h3>
+                <p>
+                    It uses a pretty simple Python service and the <a
+                        href="https://github.com/jzjzjzj/parse-torrent-name/" target="_blank">Parse Torrent Name</a>
+                    library to extract annoying file names into their constituent parts. It uses <a
+                        href="https://twistedmatrix.com/trac/" target="_blank">Twisted</a> to wire up all the gubbins
+                    inside.
+                </p>
+                <h3>No, really, why?</h3>
+                <p>
+                    My friends where all moaning about not being able to programmatically figure out what name,
+                    series and episode of a give TV show a file was. They wanted to be able to look up the shows
+                    using
+                    their own applications on APIs like <a href="http://www.tvmaze.com/" target="_blank">TVMaze</a>
+                    but
+                    no API they could find would let them grab the information without the filename being split into
+                    more useful parts. I thought I could do that, so I did.
+                </p>
+                <h3>You're a really nice person!</h3>
+                <p>Thanks, you should definitely <a href="https://paypal.me/GeeH" target="_blank">donate</a> some money
+                    to me.</p>
+                <h3>FFS THIS SERVICE ISN'T EVEN REST OR ANYTHING!!!!!!!!1!!!</h3>
+                <p>I know, it's great isn't it.</p>
+                </section>
+            </article>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-wrapper">
+        <section id="footer" class="container">
+            <div class="row">
+                <div class="12u">
+
+                    <!-- Copyright -->
+                    <div id="copyright">
+                        <ul class="links">
+                            <li>&copy; Series. Episode. Win. All rights reserved.</li>
+                            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/skel-viewport.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/prism.js"></script>
+</body>
+</html>
