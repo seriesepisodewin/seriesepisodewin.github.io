@@ -27,9 +27,9 @@
             </h1>
             <div class="example">
                 <pre><code
-                        class="language-bash">curl -d "name=Lost.S03E09.720.HDTV.x264-CTU" what.seriesepisode.win</code></pre>
+                        class="language-bash">curl "what.seriesepisode.win?name=Lost.S03E09.720.HDTV.x264-CTU"</code></pre>
             </div>
-            <h3>Parse those pesky TV show names into something a little more managable.</h3>
+            <h3>Parse those pesky TV show names into something a little more manageable.</h3>
             <div class="example">
                 <pre><code class="language-json">{
   "episode": 9,
@@ -45,7 +45,7 @@
             <div class="centered example">
                 <h3>THIS SERVICE ROCKS.</h3>
                 <p>I get it. You're obviously the kind of person who likes to get something for nothing, that's why
-                    you're using this serivce, right. But I have to pay the tiny monthly costs to run this stuff, so
+                    you're using this service, right. But I have to pay the tiny monthly costs to run this stuff, so
                     for once, just do the right thing (also, I like beer).</p>
                 <a class="button" href="https://paypal.me/GeeH">🍻 Donate!</a>
             </div>
@@ -62,16 +62,16 @@
             <article class="box post">
 
                 <header>
-
                     <h2>FAQ</h2>
                 </header>
+
                 <h3>WTF?!?!</h3>
                 <p>
-                    It's pretty simple, dumbo. You POST a file name to <code>http://what.seriesepisode.win</code> and
-                    the service returns a json string with the parsed TV show name, series and episode (if it can do
-                    so). Just post the name using the <code>name</code> field name in the data. I even provided a CURL
-                    example at the top of the page so you wouldn't have to read below the fold. What kind of a
-                    programmer are you?
+                    It's pretty simple, dumbo. You submit a file name to <code>http://what.seriesepisode.win</code> and
+                    using a GET request, and the service returns a json string with the parsed TV show name, series and
+                    episode (if it can do so). Just submit the name using the <code>name</code> field name in the
+                    querystring. I even provided a CURL example at the top of the page so you wouldn't have to read
+                    below the fold. What kind of a programmer are you?
                 </p>
                 <h3>Why?</h3>
                 <p>
@@ -99,10 +99,10 @@
                 <p>Thanks, you should definitely <a href="https://paypal.me/GeeH" target="_blank">donate</a> some money
                     to me.</p>
                 <h3>FFS THIS SERVICE ISN'T EVEN REST OR ANYTHING!!!!!!!!1!!!</h3>
-                <p>I know, it's great isn't it.</p>
+                <p>I know, it's great isn't it. Enough people annoyed me on Twitter that I actually changed it to
+                    GET.</p>
                 </section>
             </article>
-
         </div>
     </div>
 
@@ -125,15 +125,14 @@
         </section>
     </div>
 
+    <!-- Scripts -->
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/skel-viewport.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]>
+    <script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/prism.js"></script>
 </div>
-
-<!-- Scripts -->
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/skel-viewport.min.js"></script>
-<script src="assets/js/util.js"></script>
-<!--[if lte IE 8]>
-<script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="assets/js/main.js"></script>
-<script src="assets/js/prism.js"></script>
 </body>
 </html>
