@@ -70,7 +70,7 @@
                 <p>
                     It's pretty simple, dumbo. You submit a file name to <code>http://what.seriesepisode.win</code> and
                     using a GET request, and the service returns a json string with the parsed TV show name, series and
-                    episode (if it can do so). Just submit the name using the <code>name</code> field name in the
+                    episode or movie information (if it can do so). Just submit the name using the <code>name</code> field name in the
                     querystring. I even provided a CURL example at the top of the page so you wouldn't have to read
                     below the fold. What kind of a programmer are you?
                 </p>
@@ -89,17 +89,19 @@
                 <h3>No, really, why?</h3>
                 <p>
                     My friends were all moaning about not being able to programmatically figure out what name,
-                    series and episode of a give TV show a file was. They wanted to be able to look up the shows
+                    series and episode of a given TV show a file was. They wanted to be able to look up the shows
                     using
                     their own applications on APIs like <a href="http://www.tvmaze.com/" target="_blank">TVMaze</a>
                     but
                     no API they could find would let them grab the information without the filename being split into
                     more useful parts. I thought I could do that, so I did.
+
+                    It turns out the amazing PTN library also works for movies, so we get that information for free as well.
                 </p>
                 <h3>You're a really nice person!</h3>
                 <p>Thanks, you should definitely <a href="https://paypal.me/GeeH" target="_blank">donate</a> some money
                     to me.</p>
-                <h3>FFS THIS SERVICE ISN'T EVEN REST OR ANYTHING!!!!!!!!1!!!</h3>
+                <h3>FFS THIS SERVICE ISN'T EVEN REST OR GRAPH QL ANYTHING!!!!!!!!1!!!</h3>
                 <p>I know, it's great isn't it. Enough people annoyed me on Twitter that I actually changed it to
                     GET.</p>
                 </section>
